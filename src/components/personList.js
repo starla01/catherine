@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import store from '../store';
+import { addToCart } from '../actions'
 
 class PersonList extends Component {
     constructor() {
@@ -15,10 +16,7 @@ class PersonList extends Component {
 	}
 	addToCart(person){
 		console.log(person)
-		store.dispatch({
-			type: "ADD_TO_CART",
-			person: person
-		})
+		store.dispatch(addToCart(person))
 	}
 	render(){
 		return (

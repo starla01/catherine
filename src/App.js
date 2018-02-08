@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 import './App.css';
 import PersonList from './components/personList';
-import Cart from './components/cart';
+
+import Header from './components/header';
+import Footer from './components/footer';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <Cart/>
-        </header>
+        <Header />
         <div>
             <PersonList/>
         </div>
-        <footer className="App-header">Footer</footer>
+        <Footer />
       </div>
     );
   }

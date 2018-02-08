@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import store from '../store';
+import { removeFromCart } from '../actions';
+
+console.log(removeFromCart)
 
 class Cart extends Component {
     constructor() {
         super();
-		//this.removeFromCart = this.removeFromCart.bind(this);
+		this.removeFromCart = this.removeFromCart.bind(this);
 		this.state = {
 			cart: []
 		};
@@ -15,13 +18,14 @@ class Cart extends Component {
 		})
 	}
 	render(){
-		console.log("CART: ", this.state.cart)
+		
+		let _this = this;
+		console.log("CART: ", _this.removeFromCart)
 		return (
 			<div className="cart">
-
 				{
 					this.state.cart.map((person, key) =>
-						<p key={person.ID}>{person.name}</p>
+						<p key={person.ID} onClick={ () => _this.removeFromCart(person)}>{person.name}</p>
 					)
 				}
 			</div>
