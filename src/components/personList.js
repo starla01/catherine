@@ -22,7 +22,12 @@ class PersonList extends Component {
 				{
 					this.state.persons.map((person, key) =>
 						<div key={key} className="person">
-							<div className="addToCart" onClick={ () => this.addToCart(person)}><p >{person.name}</p></div>
+							<div className="addToCart" onClick={ () => this.addToCart(person)}>
+								<div className="photo">
+									<p></p>
+									<img src="/images/pym.jpg" />
+								</div>
+							</div>
 						</div>
 					)
 				}

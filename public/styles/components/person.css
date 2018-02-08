@@ -1,0 +1,21 @@
+.personList {
+  padding: 20px;
+  box-sizing: border-box; }
+  .personList .person {
+    width: 320px;
+    height: 300px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    overflow: hidden;
+    float: left;
+    margin-right: 20px;
+    position: relative;
+    transition: 0.3s; }
+    .personList .person:hover {
+      height: 550px; }
+    .personList .person img {
+      width: 100%;
+      position: absolute;
+      top: 0; }
+
+/*# sourceMappingURL=person.css.map */

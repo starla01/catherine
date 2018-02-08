@@ -8,7 +8,8 @@
   background: #0a4172;
   transition: 0.3s;
   cursor: pointer;
-  opacity: 0.7; }
+  opacity: 0.8;
+  overflow: hidden; }
   .menu .option.search {
     width: 100%;
     background-color: #1a9bfc;
@@ -23,7 +24,9 @@
     line-height: 74px;
     border-left: 3px solid #0a4172;
     box-sizing: border-box;
-    transition: 0.2s; }
+    transition: 0.2s;
+    position: relative;
+    cursor: pointer; }
     .menu .option:hover {
       background-color: #033258;
       border-left: 3px solid #2ca2e6; }
@@ -32,6 +35,12 @@
       font-size: 32px;
       position: relative;
       margin-left: 6px; }
+    .menu .option label {
+      color: white;
+      position: absolute;
+      top: -10px;
+      width: 190px;
+      left: 50px; }
   .menu:hover {
     width: 200px;
     opacity: 1; }
