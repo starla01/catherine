@@ -5,7 +5,6 @@ import { addToCart } from '../actions'
 class PersonList extends Component {
     constructor() {
         super();
-
 		this.state = {
 			persons: [
 				{ ID:1, name:"Nancy", lastName: "Botello Carmona", mail:"nancyy2@hotmail.com", servicePrice: "500", gender: "F"},
@@ -15,7 +14,6 @@ class PersonList extends Component {
 		}
 	}
 	addToCart(person){
-		console.log(person)
 		store.dispatch(addToCart(person))
 	}
 	render(){
@@ -26,9 +24,6 @@ class PersonList extends Component {
 						<div key={key} className="person">
 							<div className="addToCart" onClick={ () => this.addToCart(person)}><p >{person.name}</p></div>
 						</div>
-
-						
-						
 					)
 				}
 			</div>

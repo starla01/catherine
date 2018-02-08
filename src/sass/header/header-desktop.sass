@@ -1,0 +1,68 @@
+.App-header
+	border: 1px solid red
+	width: 100%
+	height: 450px
+	position: relative
+	.backColor
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		opacity: 0.99
+		background: rgba(19,13,44,1)
+		background: -moz-linear-gradient(45deg, rgba(19,13,44,1) 0%, rgba(49,36,90,1) 51%, rgba(216,25,98,1) 100%)
+		background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(19,13,44,1)), color-stop(51%, rgba(49,36,90,1)), color-stop(100%, rgba(216,25,98,1)))
+		background: -webkit-linear-gradient(45deg, rgba(19,13,44,1) 0%, rgba(49,36,90,1) 51%, rgba(216,25,98,1) 100%)
+		background: -o-linear-gradient(45deg, rgba(19,13,44,1) 0%, rgba(49,36,90,1) 51%, rgba(216,25,98,1) 100%)
+		background: -ms-linear-gradient(45deg, rgba(19,13,44,1) 0%, rgba(49,36,90,1) 51%, rgba(216,25,98,1) 100%)
+		background: linear-gradient(45deg, rgba(19,13,44,1) 0%, rgba(49,36,90,1) 51%, rgba(216,25,98,1) 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#130d2c', endColorstr='#d81962', GradientType=1 )
+	.mainBanner
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		overflow: hidden
+		img
+			height: 100%
+			opacity: 0.3
+	.elemets
+		border: 1px dotted white
+		width: 80%
+		height: 120px
+		position: absolute
+		top: 0
+		overflow: hidden
+		left: 50%
+		margin-left: -40%
+		.logo
+			border: 0px dotted white
+			position: absolute
+			left: 0
+			top: 10px
+			width: 150px
+			height: 150px
+			text-align: center
+			cursor: pointer
+			img
+				margin-top: 20px
+				width: 60%
+		.userCart
+			float: right
+			border: 0px dotted white
+			width: 160px
+			height: 120px
+			.user,.cart
+				cursor: pointer
+				float: left
+				width: 50%
+				line-height: 160px
+				text-align: center
+				transition: 0.3s
+				i
+					color: white
+					font-size: 50px
+				&:hover
+					transform: scale(1.1)
+
+

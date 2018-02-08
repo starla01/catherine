@@ -1,4 +1,4 @@
-const addToCart = person =>{
+const addToCart = person => {
     return {
         type: "ADD_TO_CART",
         person

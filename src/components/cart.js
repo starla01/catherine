@@ -1,36 +1,30 @@
-import React, { Component } from 'react';
-import store from '../store';
+import React from 'react';
 import { removeFromCart } from '../actions';
+import {connect} from 'react-redux';
 
-console.log(removeFromCart)
-
-class Cart extends Component {
-    constructor() {
-        super();
-		this.removeFromCart = this.removeFromCart.bind(this);
-		this.state = {
-			cart: []
-		};
-		store.subscribe(() =>{
-			this.setState({
-				cart: store.getState().cart
-			})
-		})
-	}
-	render(){
-		
-		let _this = this;
-		console.log("CART: ", _this.removeFromCart)
+const Cart = ({cart, removeFromCart}) =>  {
 		return (
 			<div className="cart">
 				{
-					this.state.cart.map((person, key) =>
-						<p key={person.ID} onClick={ () => _this.removeFromCart(person)}>{person.name}</p>
+					cart.map((person, key) =>
+						<div key={key} className={person.name} onClick={ () => removeFromCart(person)}> {person.name}</div>
 					)
 				}
 			</div>
-		);
-	}
+		)
 }
 
-export default Cart;
+const mapStateToProps = state => {
+	return {
+		cart: state.cart
+	};
+}
+
+const mapDispatchToProps = dispatch => {
+	return {
+		removeFromCart(person){
+			dispatch(removeFromCart(person));
+		}
+	};
+}
+export default connect(mapStateToProps, mapDispatchToProps)(Cart);

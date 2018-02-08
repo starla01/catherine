@@ -1,21 +1,25 @@
 import React, { Component } from 'react';
 import Cart from './cart';
-import Menu from './menu';
 
 class Header extends Component {
-    constructor() {
-        super();
-		//this.removeFromCart = this.removeFromCart.bind(this);
-		// this.state = {
-		// 	cart: []
-		// };
-	}
 	render(){
 		return (
 			<div className="App-header">
-                <Menu />
                 <Cart/>
-                <i className="material-icons">face</i>    
+				<div className="backColor"></div>
+				<div className="elemets">
+					<div className="logo">
+						<img src="/images/logo.png" />
+					</div>
+					<div className="userCart">
+						<div className="user">
+							<i className="material-icons">account_circle</i>
+						</div>
+						<div className="cart">
+							<i className="material-icons">shopping_cart</i>
+						</div>
+					</div>
+				</div>
 			</div>
 		);
 	}

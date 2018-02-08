@@ -1,0 +1,68 @@
+.App-header {
+  border: 1px solid red;
+  width: 100%;
+  height: 450px;
+  position: relative; }
+  .App-header .backColor {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0.99;
+    background: #130d2c;
+    background: -moz-linear-gradient(45deg, #130d2c 0%, #31245a 51%, #d81962 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #130d2c), color-stop(51%, #31245a), color-stop(100%, #d81962));
+    background: -webkit-linear-gradient(45deg, #130d2c 0%, #31245a 51%, #d81962 100%);
+    background: -o-linear-gradient(45deg, #130d2c 0%, #31245a 51%, #d81962 100%);
+    background: -ms-linear-gradient(45deg, #130d2c 0%, #31245a 51%, #d81962 100%);
+    background: linear-gradient(45deg, #130d2c 0%, #31245a 51%, #d81962 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#130d2c', endColorstr='#d81962', GradientType=1 ); }
+  .App-header .mainBanner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    overflow: hidden; }
+    .App-header .mainBanner img {
+      height: 100%;
+      opacity: 0.3; }
+  .App-header .elemets {
+    border: 1px dotted white;
+    width: 80%;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    left: 50%;
+    margin-left: -40%; }
+    .App-header .elemets .logo {
+      border: 0px dotted white;
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 150px;
+      height: 150px;
+      text-align: center;
+      cursor: pointer; }
+      .App-header .elemets .logo img {
+        margin-top: 20px;
+        width: 60%; }
+    .App-header .elemets .userCart {
+      float: right;
+      border: 0px dotted white;
+      width: 160px;
+      height: 120px; }
+      .App-header .elemets .userCart .user, .App-header .elemets .userCart .cart {
+        cursor: pointer;
+        float: left;
+        width: 50%;
+        line-height: 160px;
+        text-align: center;
+        transition: 0.3s; }
+        .App-header .elemets .userCart .user i, .App-header .elemets .userCart .cart i {
+          color: white;
+          font-size: 50px; }
+        .App-header .elemets .userCart .user:hover, .App-header .elemets .userCart .cart:hover {
+          transform: scale(1.1); }
+
+/*# sourceMappingURL=header-desktop.css.map */
