@@ -10,4 +10,4 @@ npm start
 # Execute sass
 ```sass
 sass --watch src/sass/:public/styles/ --trace
-`
+```
