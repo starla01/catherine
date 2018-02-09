@@ -1,5 +1,4 @@
 .App-header {
-  border: 1px solid red;
   width: 100%;
   height: 450px;
   position: relative; }
@@ -116,28 +115,87 @@
     opacity: 1; }
 
 .personList {
-  padding: 20px;
-  box-sizing: border-box; }
+  padding: 20px 10%;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around; }
+  .personList .person.darkPink {
+    border-top: 1px solid #31245a;
+    border-bottom: 6px solid #31245a; }
+  .personList .person.pink {
+    border-top: 1px solid #692a7d;
+    border-bottom: 6px solid #692a7d; }
+  .personList .person.lightPink {
+    border-top: 1px solid #d81962;
+    border-bottom: 6px solid #d81962; }
   .personList .person {
     width: 320px;
     height: 300px;
-    border: 1px solid gray;
     border-radius: 4px;
     overflow: hidden;
-    float: left;
     margin-right: 20px;
     position: relative;
-    transition: 0.3s; }
+    transition: 0.3s;
+    text-align: center; }
     .personList .person:hover {
-      height: 550px; }
+      height: 480px; }
+      .personList .person:hover .info {
+        bottom: 0; }
     .personList .person img {
       width: 100%;
       position: absolute;
-      top: 0; }
+      top: 0;
+      left: 0; }
+  .personList .info {
+    width: 100%;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.85);
+    position: absolute;
+    bottom: -400px;
+    transition: 0.3s;
+    padding: 10px;
+    box-sizing: border-box; }
+
+.shoppingCart {
+  width: 320px;
+  height: 85%;
+  position: fixed;
+  right: 0;
+  z-index: 1000;
+  top: 10%;
+  border-radius: 6px 0 0 6px;
+  background-color: white;
+  -webkit-box-shadow: -5px -1px 16px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -5px -1px 16px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: -5px -1px 16px -6px rgba(0, 0, 0, 0.75); }
+  .shoppingCart .cartTitle {
+    border-bottom: 1px dashed #eaeaea;
+    padding: 8px;
+    box-sizing: border-box; }
+    .shoppingCart .cartTitle i {
+      position: absolute;
+      right: 10px;
+      top: 7px;
+      color: #d81962; }
+  .shoppingCart .paypalButton {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background: #1a9bfc;
+    border-radius: 0 0 6px 6px;
+    bottom: 0; }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif; }
+  font-family: "Open Sans";
+  font-weight: 300; }
 
 /*# sourceMappingURL=index.css.map */
